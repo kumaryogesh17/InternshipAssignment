@@ -8,13 +8,6 @@
       "quantity": 6
     },
     {
-      "id": "5e2940fdef72aab7db270730",
-      "customer_name": "Carmen Brooks",
-      "customer_email": "carmenbrooks@kyaguru.com",
-      "product": "Product 2",
-      "quantity": 3
-    },
-    {
       "id": "5e2940fd05496a7bcb3db4a8",
       "customer_name": "Vinson Norman",
       "customer_email": "vinsonnorman@kyaguru.com",
@@ -358,25 +351,18 @@
       "quantity": 4
     },
     {
-      "id": "5e2940fd1b9257132a799076",
-      "customer_name": "Selena Mcbride",
-      "customer_email": "selenamcbride@kyaguru.com",
-      "product": "Product 1",
-      "quantity": 4
+      "id": "CIqr2th",
+      "customer_name": " Hi ",
+      "customer_email": "hI@gmail.com",
+      "product": "hindi",
+      "quantity": "2"
     },
     {
-      "id": "5e2940fd4659280f82224017",
-      "customer_name": "Nelda Spencer",
-      "customer_email": "neldaspencer@kyaguru.com",
-      "product": "Product 3",
-      "quantity": 7
-    },
-    {
-      "id": "5e2940fd54f65e18802b5a2d",
-      "customer_name": "Lang Tillman",
-      "customer_email": "langtillman@kyaguru.com",
-      "product": "Product 1",
-      "quantity": 8
+      "id": "eP8tdTi",
+      "customer_name": " yogesh",
+      "customer_email": "add@gmail.com",
+      "product": "w",
+      "quantity": "10"
     }
   ]
 }

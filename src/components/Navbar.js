@@ -6,6 +6,8 @@ import * as data from '../Database/db.json';
 
 
 const Navbar = () => {
+    const userName = JSON.parse(localStorage.getItem('userDetails'));
+    const {name} = userName
 
     return (
         <>
@@ -26,6 +28,8 @@ const Navbar = () => {
                             
                         </ul>
                      {/* <h4 className="totalOrder">Total Orders = {Object.keys(data.orders).length}</h4>    */}
+                      
+                      {!localStorage.getItem("userDetails") === null ?"": <h5 className="nameTag">{`Welcome ${name}`}</h5>}
                        <AddNewOrder/>
                        
 
