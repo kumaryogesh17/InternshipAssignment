@@ -3,10 +3,10 @@
 
 ![Screenshot](https://github.com/kumaryogesh17/InternshipAssignment/blob/master/public/images/1.png?raw=true)
 
-![Screenshot](public\images\2.png)
+![Screenshot](https://github.com/kumaryogesh17/InternshipAssignment/blob/master/public/images/2.png?raw=true)
 
-![Screenshot](public\images\3.png)
+![Screenshot](https://github.com/kumaryogesh17/InternshipAssignment/blob/master/public/images/3.png?raw=true)
 
-![Screenshot](public\images\4.png)
+![Screenshot](https://github.com/kumaryogesh17/InternshipAssignment/blob/master/public/images/4.png?raw=true)
 
-![Screenshot](public\images\5.png)
+![Screenshot](https://github.com/kumaryogesh17/InternshipAssignment/blob/master/public/images/5.png?raw=true)
