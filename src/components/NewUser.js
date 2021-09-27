@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+
+// initial values for storing user details
 const initialState = {
 
     "name": " ",
@@ -28,12 +30,14 @@ const NewUser = () => {
         e.preventDefault();
         
         let myJSON = await JSON.stringify({ name: userDetails.name, email: userDetails.email, password: userDetails.password });
+       
+        // --- setting usersDetail on localStorage
         localStorage.setItem("userDetails", myJSON);
         console.log(localStorage.setItem("userDetails", myJSON))
         console.log(myJSON)
         
-        var retrievedObject = localStorage.getItem('userDetails');
-        console.log('retrievedObject: ', JSON.parse(retrievedObject));
+        // var retrievedObject = localStorage.getItem('userDetails');
+        // console.log('retrievedObject: ', JSON.parse(retrievedObject));
 
         history.push("./allOrders")
     }

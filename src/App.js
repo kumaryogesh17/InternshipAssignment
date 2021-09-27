@@ -14,7 +14,7 @@ function App() {
         <div className="container">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <NewUser />
             </Route>
             <Route exact path="/allOrders">
               <Orders />

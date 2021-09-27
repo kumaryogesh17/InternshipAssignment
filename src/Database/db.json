@@ -64,13 +64,6 @@
       "quantity": 7
     },
     {
-      "id": "5e2940fd705c128e546595c2",
-      "customer_name": "Florine Kent",
-      "customer_email": "florinekent@kyaguru.com",
-      "product": "Product 3",
-      "quantity": 8
-    },
-    {
       "id": "5e2940fdd7c5be55d0c86d92",
       "customer_name": "Sparks Ware",
       "customer_email": "sparksware@kyaguru.com",
@@ -349,20 +342,6 @@
       "customer_email": "holdenlivingston@kyaguru.com",
       "product": "Product 3",
       "quantity": 4
-    },
-    {
-      "id": "CIqr2th",
-      "customer_name": " Hi ",
-      "customer_email": "hI@gmail.com",
-      "product": "hindi",
-      "quantity": "2"
-    },
-    {
-      "id": "eP8tdTi",
-      "customer_name": " yogesh",
-      "customer_email": "add@gmail.com",
-      "product": "w",
-      "quantity": "10"
     }
   ]
 }

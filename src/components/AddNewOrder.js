@@ -18,10 +18,11 @@ const AddNewOrder = () => {
     const {customer_name ,customer_email , product,quantity} = order;
 
     const onChange = (e) => {
-        
         setorder({ ...order, [e.target.name]: e.target.value })
         console.log(order);
     }
+
+    // function for adding new order in json file
     const AddingOrderInDB =async ()=>{
         await addOrder(order)
         refClose.current.click();
@@ -30,7 +31,7 @@ const AddNewOrder = () => {
 
     return (
         <>
-            <button ref={ref} type="button" className="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button ref={ref} type="button" className="btn btn-dark orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 New Order
             </button>
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

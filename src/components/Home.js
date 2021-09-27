@@ -1,55 +1,50 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router'
 
 const Home = () => {
 
-    const [emaillog, setEmaillog] = useState(" ");
-    const [passwordlog, setPasswordlog] = useState(" ");
-    const [flag, setFlag] = useState(false);
-
-    const [home, setHome] = useState(true);
-    let history = useHistory();
-    const login = () => {
-        // history.push("./allOrders")
-
-       
-            Event.preventDefault();
-            let pass = localStorage.getItem('hardikSubmissionPassword').replace(/"/g, "");
-            let mail = localStorage.getItem('hardikSubmissionEmail').replace(/"/g, "");
-            // .replace(/"/g,"") is used to remove the double quotes for the string
     
-            if (!emaillog || !passwordlog) {
-                setFlag(true);
-                console.log("EMPTY");
-            } else if ((passwordlog !== pass) || (emaillog !== mail)) {
-                setFlag(true);
-            } else {
-                setHome(!home);
-                setFlag(false);
-            }
-        
+    let history = useHistory();
+
+    const userName = JSON.parse(localStorage.getItem('userDetails'));
+    const {email,password} = userName
+    
+    const login = () => {
+        if (email === document.getElementById( "email").value && password === document.getElementById( "password").value){
+            history.push("./allOrders")
+            console.log("Looging Successfully");
+        }
+        else {
+            alert("Not a user ! Please create a new Account");
+            history.push("./newuser");
+
+        }
 
     }
+
+   const onChange=()=>{
+       
+    }
     return (
-        <div>
-            <form >
+        <>
+            {localStorage.getItem("userDetails") !== null ? history.push("./allOrders"):<form >
                 <div class="mt-3 text-center">
                     <h3>Login</h3>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" onChange={(event) => setEmaillog(event.target.value)} />
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"  onChange={onChange} />
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" onChange={(event) => setPasswordlog(event.target.value)} />
+                    <input type="password" class="form-control" id="password"  onChange={onChange} />
                 </div>
 
                 <button type="submit" onClick={login} class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+            </form>}
+        </>
     )
 }
 
